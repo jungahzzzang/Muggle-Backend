@@ -46,8 +46,8 @@ public class JwtProvider {
 	
 	private UserService userService;
 	
-	//@Value("${jwt.secret}")
-    private String secretKey = "mugglemugglemugglemuglemugle";
+	@Value("${jwt.secretKey}")
+    private String secretKey;
 	
     /*public JwtProvider(@Value("${jwt.secret}") String secretKey) {
 		byte[] keyBytes = Decoders.BASE64.decode(secretKey);

@@ -39,7 +39,8 @@ public class UserController {
 		System.out.println(kakao_token);
 		System.out.println(kakao_profile);
 		
-		String kakao_sub = (String) kakao_profile.get("id");
+		//String kakao_sub = (String) kakao_profile.get("id");
+		String kakao_sub = String.valueOf(kakao_profile.get("id"));
 		String email = (String) kakao_profile.get("email");
 		String username = (String) kakao_profile.get("nickname");
 		String picture = (String) kakao_profile.get("profileImageUrl");
